@@ -1,0 +1,86 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-07T20:14:52.193Z",
+        "line": 4,
+        "name": "To perform Get operation on Employee DB",
+        "description": "",
+        "id": "perform-crud-operations;to-perform-get-operation-on-employee-db",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 729237663,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Base URI is \"http://3.85.227.102:8088/employees\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://3.85.227.102:8088/employees\"",
+                  "offset": 12
+                }
+              ],
+              "location": "APITestSteps.base_URI_is(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 847224974,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I perform the get operation",
+            "match": {
+              "location": "APITestSteps.i_perform_the_get_operation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2042038,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "APITestSteps.i_get_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APIGetReq"
+          }
+        ]
+      }
+    ],
+    "name": "Perform CRUD operations",
+    "description": "",
+    "id": "perform-crud-operations",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/restAPI/APITest.feature",
+    "tags": [
+      {
+        "name": "@APIGetReq",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
